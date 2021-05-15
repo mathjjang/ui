@@ -78,6 +78,7 @@
                     me.$store.state.nickname = e.data.nickname
                     me.$store.state.address = e.data.address
                     localStorage.setItem("nickname", e.data.nickname)
+                    localStorage.setItem("mileage", e.data.mileage)
                     localStorage.setItem("address", e.data.address)
                 })
             }
