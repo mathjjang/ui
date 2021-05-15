@@ -76,6 +76,7 @@
                 me.$http.get(`${API_HOST}/users/${localStorage.getItem('userId')}`).then(function (e) {
                     console.log(e)
                     me.$store.state.nickname = e.data.nickname
+                    me.$store.state.mileage = e.data.mileage
                     me.$store.state.address = e.data.address
                     localStorage.setItem("nickname", e.data.nickname)
                     localStorage.setItem("mileage", e.data.mileage)
